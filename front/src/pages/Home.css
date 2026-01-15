@@ -1,0 +1,147 @@
+.home {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.transaction-form {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+
+.error {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin: 0.5rem 0;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background: #535bf2;
+}
+
+button[type="submit"]:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.transactions-list {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.transactions-list h2 {
+  font-size: 1.25rem;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.transactions-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.tx-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tx-description {
+  font-weight: 500;
+  color: #333;
+}
+
+.tx-date {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.tx-amount {
+  font-weight: 600;
+  color: #28a745;
+  font-size: 1.125rem;
+}
+
+.empty-state {
+  text-align: center;
+  color: #888;
+  padding: 2rem;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 1rem 0.75rem;
+  }
+
+  .transaction-form {
+    padding: 1rem;
+  }
+
+  .transaction-item {
+    padding: 0.75rem 1rem;
+  }
+}
