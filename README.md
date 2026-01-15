@@ -1,1 +1,1 @@
-# transaction-manage
+# transaction-manager
